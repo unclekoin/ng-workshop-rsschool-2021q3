@@ -1,40 +1,64 @@
 {
-  "editor.formatOnSave": true,
-  "editor.insertSpaces": true,
-  "files.eol": "\n",
-  "search.exclude": {
-    ".vscode": true,
-    "dist": true,
-    "node_modules": true,
-    "aot": true
-  },
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "importSorter.generalComnfiguration.sortOnBeforeSave": true,
-  "importSorter.generalComnfiguration.customOrderingRules.rules": [
-    {
-      "regex": "^[@]",
-      "orderLevel": 10
+    "editor.insertSpaces": true,
+    "files.eol": "\n",
+    "search.exclude": {
+        ".vscode": true,
+        "dist": true,
+        "node_modules": true,
+        "aot": true
     },
-    {
-      "type": "importMember",
-      "regex": "^[@]ngrx.*",
-      "orderLevel": 10
+    "files.insertFinalNewline": true,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.useTabs": false,
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 120,
+    "prettier.stylelintIntegration": true,
+    "[typescript]": {
+        "editor.formatOnSave": true
     },
-    {
-      "type": "importMember",
-      "regex": "^$",
-      "orderLevel": 30,
-      "disableSort": true
+    "[scss]": {
+        "editor.formatOnSave": true
     },
-    {
-      "regex": "^[.]",
-      "orderLevel": 40,
-    }
-  ],
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always"
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.formatOnSave": true,
+        "editor.suggest.insertMode": "replace"
+    },
+    "editor.formatOnPaste": false,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "workbench.editor.highlightModifiedTabs": true,
+    "files.trimFinalNewlines": true,
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "importSorter.generalConfiguration.sortOnBeforeSave": true,
+    "importSorter.sortConfiguration.customOrderingRules.rules": [
+        {
+            "regex": "^[@]",
+            "orderLevel": 10
+        },
+        {
+            "type": "importMember",
+            "regex": "^[@]ngrx.*",
+            "orderLevel": 10
+        },
+        {
+            "type": "importMember",
+            "regex": "^$",
+            "orderLevel": 30,
+            "disableSort": true
+        },
+        {
+            "regex": "^[.]",
+            "orderLevel": 40
+        }
+    ]
 }

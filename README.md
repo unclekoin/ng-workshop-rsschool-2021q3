@@ -8,4 +8,4 @@
 Add files:
   - settings.json
   - launch.json
-  - .prettierrc.yml
+  - .prettierrc.json
